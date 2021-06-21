@@ -38,7 +38,7 @@ function newContainer(num) {
         let div = document.createElement("div")
         div.className = "new-box"
         div.innerHTML = `
-            <img src="/assets/img/new${i+1}.png" alt="">
+            <img src="./assets/img/new${i+1}.png" alt="">
             <div class="new-link">
                 <a href="#" class="c-btn">View Prodcut</a>
             </div>
@@ -53,10 +53,10 @@ function Product() {
         const featured = document.querySelector('#featuredCon');
 
         const featuredData = [
-            {title:"Headphone One Black",img:"/assets/img/feature1.png",price:"$29"},
-            {title:"Bluetooth Specker Black",img:"/assets/img/feature2.png",price:"$199"},
-            {title:"Apple Airpod White",img:"/assets/img/feature3.png",price:"$9"},
-            {title:"Bluetooth Watch Black",img:"/assets/img/feature4.png",price:"$99"},
+            {title:"Headphone One Black",img:"./assets/img/feature1.png",price:"$29"},
+            {title:"Bluetooth Specker Black",img:"./assets/img/feature2.png",price:"$199"},
+            {title:"Apple Airpod White",img:"./assets/img/feature3.png",price:"$9"},
+            {title:"Bluetooth Watch Black",img:"./assets/img/feature4.png",price:"$99"},
         ]
         featuredData.map((i)=>{
             let div = document.createElement("div")
@@ -85,7 +85,7 @@ function sponsorConFun(num) {
         div.className = 'sponsors-logo'
 
         div.innerHTML = `
-            <img src="/assets/img/logo${i + 1}.png" alt="">
+            <img src="./assets/img/logo${i + 1}.png" alt="">
         `
         sponsorCon.appendChild(div)
     }
