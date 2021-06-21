@@ -1,0 +1,126 @@
+
+.fake-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container{
+    position: relative;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.card-container .card{
+    width: 100%;
+    background-color: #fff;
+}
+.card-container .card:hover .card-action{
+    display: initial;
+    transition: all 0.3s ease;
+}
+
+.card-container .card .card-img-box{
+    position: relative;
+    width: 100%;
+    height: 310px;
+    overflow: hidden;
+}
+
+.card-container .card .card-img-box img{
+    position: absolute;
+    width: 100%; 
+    top: 0;left: 0;
+    object-fit: contain;
+    transition: 0.5s ease-in-out;
+}
+
+.card-container .card:hover .card-img-box img{
+    transform: scale(1.5);
+    transform-origin: top;
+}
+
+.card-container .card .card-contain-box{
+    padding: 10px;
+}
+.card-container .card .card-contain-box .product-name h3{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}   
+.card-container .card .card-contain-box .product-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.card-container .card .card-contain-box .product-rating h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ff2020;
+}
+
+.card-container .card .card-contain-box .product-rating  .rating .fa{
+    color: #ffd513;
+    cursor:pointer;
+}
+.gray{
+    color:#ccc !important;
+}
+
+
+.card .card-action{
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+.card .card-action li {
+    position: relative;
+    width: 40px;height: 40px;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.card .card-action li a span{
+    position: absolute;
+    right: 45px;
+    top: 20px;
+    transform:translateY(-50%);
+    white-space: nowrap;
+    padding: 4px 40px;
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0;
+
+    transition: 0.2s ease-in-out;
+}
+
+.card .card-action li a{
+    color: black;
+}
+
+.card .card-action li:hover ,.card .card-action li:hover a{
+    background-color: #ff2020;
+    color: white;
+}
+
+.card .card-action li:hover a span{
+    opacity: 6;
+}
