@@ -14,7 +14,7 @@ for (let i = 0; i < 8; i++) {
     div.innerHTML = `
     <div class="card">
         <div class="card-img-box">
-            <img src="../product/images/${i+1}.jpg" alt="img">
+            <img src="./product/images/${i+1}.jpg" alt="img">
             <ul class="card-action">
                 <li><a href="">
                     <i class="fa fa-heart" aria-hidden="true"></i>
